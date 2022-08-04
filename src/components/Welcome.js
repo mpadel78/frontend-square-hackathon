@@ -4,6 +4,8 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
+import Typography from "@mui/material/Typography";
+
 function Welcome() {
   return (
     <>
@@ -15,12 +17,23 @@ function Welcome() {
           lg={12}
           style={{
             textAlign: "center",
-
+            backgroundColor: "#926AA6",
             paddingLeft: "30px",
-            height: "100%",
+            height: "20vh",
           }}
         >
-          here something goes like welcome message on paper
+          <Paper
+            style={{
+              marginTop: "5vh",
+              marginLeft: "30%",
+              width: "50vw",
+              height: "10vh",
+            }}
+          >
+            <Typography variant="h5" style={{ padding: "2vh" }}>
+              Hey User, welcome to your Dashboard
+            </Typography>
+          </Paper>
         </Grid>
         <Grid
           item
@@ -30,9 +43,9 @@ function Welcome() {
           lg={12}
           style={{
             textAlign: "center",
-
+            backgroundColor: "#E9897E",
             paddingLeft: "30px",
-            height: "100%",
+            height: "80vh",
           }}
         >
           <Grid
@@ -42,8 +55,9 @@ function Welcome() {
             lg={6}
             style={{
               textAlign: "center",
-
+              backgroundColor: "#FDAC53",
               paddingLeft: "30px",
+
               height: "100%",
             }}
           >
@@ -57,7 +71,7 @@ function Welcome() {
             lg={6}
             style={{
               textAlign: "center",
-
+              backgroundColor: "#00A170",
               paddingLeft: "30px",
               height: "100%",
             }}
