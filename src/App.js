@@ -4,7 +4,9 @@ import Welcome from "./components/Welcome";
 function App() {
   return (
     <>
-      <Welcome />
+      <div style={{ height: "100vh" }}>
+        <Welcome />
+      </div>
     </>
   );
 }
