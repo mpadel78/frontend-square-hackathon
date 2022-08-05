@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
@@ -68,22 +69,24 @@ function Welcome() {
               backgroundColor: "#FDAC53",
             }}
           >
-            <Paper
-              elevation={23}
-              style={{
-                marginTop: "10vh",
-                margin: "13vw",
-                width: "50%",
-                height: "50%",
-                marginBottom: "20px",
-                justifyContent: "center",
-              }}
-            >
-              <Typography style={{ paddingTop: "8vh" }} align="center">
-                {" "}
-                Create class here
-              </Typography>
-            </Paper>
+            <Link to="create" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={23}
+                style={{
+                  marginLeft: "27%",
+                  marginTop: "12vh",
+                  width: "50%",
+                  height: "50%",
+                  marginBottom: "20px",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography style={{ paddingTop: "25%" }} align="center">
+                  {" "}
+                  Create class here
+                </Typography>
+              </Paper>
+            </Link>
           </Grid>
 
           <Grid
@@ -98,22 +101,25 @@ function Welcome() {
               backgroundColor: "#00A170",
             }}
           >
-            <Paper
-              elevation={23}
-              style={{
-                marginTop: "10vh",
-                margin: "13vw",
-                width: "50%",
-                height: "50%",
-                marginBottom: "20px",
-                justifyContent: "center",
-              }}
-            >
-              <Typography style={{ paddingTop: "8vh" }} align="center">
-                {" "}
-                View class here
-              </Typography>
-            </Paper>
+            <Link to="view" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={23}
+                style={{
+                  marginTop: "12vh",
+                  marginLeft: "27%",
+
+                  width: "50%",
+                  height: "50%",
+                  marginBottom: "20px",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography style={{ paddingTop: "25%" }} align="center">
+                  {" "}
+                  View class here
+                </Typography>
+              </Paper>
+            </Link>
           </Grid>
         </Grid>
       </Grid>
