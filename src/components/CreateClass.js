@@ -12,8 +12,6 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 
-import Stack from "@mui/material/Stack";
-
 function CreateClass() {
   return (
     <>
